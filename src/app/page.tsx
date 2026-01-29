@@ -1,6 +1,7 @@
 import Agenda from "@/components/Agenda";
 import Header from "@/components/Header";
 import Search from "@/components/Search";
+import ProfilIcon from "@/components/ProfilIcon";
 
 export default function Home() {
   return (

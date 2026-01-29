@@ -1,6 +1,6 @@
 export default function Search() {
 	  return (
-	<div className="rounded-2xl bg-white/5 p-4">
+	<div className="">
 	  <input
 		type="text"
 		placeholder="Rechercher des joueurs..."
