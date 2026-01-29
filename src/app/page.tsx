@@ -1,18 +1,13 @@
-import Agenda from "@/components/Home/Agenda";
-import Header from "@/components/Header/Header";
-import Search from "@/components/Header/Search";
-import ProfilIcon from "@/components/Header/ProfilIcon";
+import Agenda from "@/components/Main/Agenda";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0b0f1b] via-[#141826] to-[#0b0f1b] text-slate-100">
+    <div className="min-h-screen text-slate-100">
       <div className="relative mx-auto max-w-6xl px-6 pb-16 pt-8">
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-50">
           <div className="absolute left-8 top-4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
           <div className="absolute right-10 top-10 h-72 w-72 rounded-full bg-purple-500/10 blur-3xl" />
         </div>
-
-        <Header />
 
         <main className="mt-10">
           <h1 className="text-center text-3xl font-semibold tracking-wide md:text-4xl">

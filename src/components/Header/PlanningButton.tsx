@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function DeckButton() {
+export default function PlanningButton() {
   const pathname = usePathname();
-  const isActive = pathname === "/deck";
+  const isActive = pathname === "/";
 
   return (
-    <Link href="/deck">
+    <Link href="/">
       <div
         className={`rounded-lg px-4 py-2 flex items-center gap-2 transition ${
           isActive
@@ -16,7 +16,7 @@ export default function DeckButton() {
             : "bg-white/10 text-slate-100 hover:bg-white/20"
         }`}
       >
-        <p className="text-sm font-bold">Decks</p>
+        <p className="text-sm font-bold">Planning</p>
       </div>
     </Link>
   );

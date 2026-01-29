@@ -19,8 +19,14 @@
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: var(--background);
+  background: linear-gradient(to bottom right, #0b0f1b, #141826, #0b0f1b);
   color: var(--foreground);
   font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
 }
