@@ -9,6 +9,8 @@ interface DeckInfosProps {
 }
 
 export default function DeckInfos({ deck, onClose }: DeckInfosProps) {
+  const lastModifiedLabel = deck.lastModified.toLocaleDateString("fr-FR");
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -37,6 +39,7 @@ export default function DeckInfos({ deck, onClose }: DeckInfosProps) {
             className="rounded-md bg-white/10 px-2 py-1 text-sm text-slate-200 hover:bg-white/20"
             onClick={onClose}
             type="button"
+            aria-label="Fermer"
           >
             Fermer
           </button>
@@ -54,7 +57,7 @@ export default function DeckInfos({ deck, onClose }: DeckInfosProps) {
           {deck.description && <p>{deck.description}</p>}
           <p>
             <span className="text-slate-400">Dernière modif :</span>{" "}
-            {deck.lastModified.toLocaleDateString("fr-FR")}
+            {lastModifiedLabel}
           </p>
         </div>
       </div>

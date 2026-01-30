@@ -1,4 +1,4 @@
-import DeckComponent from "@/components/Decks/DeckComponent/DeckComponent";
+import DeckComponent from "@/components/Decks/DeckComponent";
 
 export default function DeckPage() {
   return (

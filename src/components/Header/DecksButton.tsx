@@ -8,7 +8,7 @@ export default function DeckButton() {
   const isActive = pathname === "/deck";
 
   return (
-    <Link href="/deck">
+    <Link href="/deck" aria-label="Decks">
       <div
         className={`rounded-lg px-4 py-2 flex items-center gap-2 transition ${
           isActive
@@ -16,7 +16,8 @@ export default function DeckButton() {
             : "bg-white/10 text-slate-100 hover:bg-white/20"
         }`}
       >
-        <p className="text-sm font-bold">Decks</p>
+        <i className="fas fa-layer-group text-sm md:hidden" aria-hidden="true" />
+        <p className="hidden text-sm font-bold md:block">Decks</p>
       </div>
     </Link>
   );
