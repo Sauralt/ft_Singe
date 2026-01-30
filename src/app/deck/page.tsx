@@ -1,3 +1,5 @@
+import DeckComponent from "@/components/Decks/DeckComponent/DeckComponent";
+
 export default function DeckPage() {
   return (
     <div className="min-h-screen text-slate-100">
@@ -9,16 +11,11 @@ export default function DeckPage() {
 
         <main className="mt-10">
           <h1 className="text-center text-3xl font-semibold tracking-wide md:text-4xl">
-            Mes Decks
+            Decks disponibles au pret
           </h1>
 
           <section className="mt-10 rounded-3xl bg-white/5 p-6 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.8)]">
-            <div className="text-center text-slate-400">
-              <p className="mb-4">Aucun deck créé pour le moment</p>
-              <button className="mt-4 rounded-lg bg-blue-500 px-6 py-2 text-white hover:bg-blue-600 transition">
-                Créer un nouveau deck
-              </button>
-            </div>
+			<DeckComponent />
           </section>
         </main>
       </div>
